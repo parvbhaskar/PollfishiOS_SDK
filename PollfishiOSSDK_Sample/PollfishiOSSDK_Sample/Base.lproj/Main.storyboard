@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nt6-1Q-gaY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PollfishiOSSDK_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="54" translatesAutoresizingMaskIntoConstraints="NO" id="X0H-nj-xs6">
+                                <rect key="frame" x="57" y="351" width="300" height="194"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ywa-lV-Kwx">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="70"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="UsePollfishiOSSDKButton"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="8oG-9r-JbO"/>
+                                            <constraint firstAttribute="height" constant="70" id="hx3-C7-lWw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="Pollfish iOS SDK VC">
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonUsePollfishiOSSDK:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s0y-FF-ear"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRx-db-ynd">
+                                        <rect key="frame" x="0.0" y="124" width="300" height="70"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="UsePollfishiOSSDKWindowButton"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                        <state key="normal" title="Pollfish iOS SDK Window"/>
+                                        <connections>
+                                            <action selector="buttonUsePollfishiOSSDKWindoe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MDz-D6-99w"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZRx-db-ynd" firstAttribute="height" secondItem="Ywa-lV-Kwx" secondAttribute="height" id="nve-zj-VJq"/>
+                                    <constraint firstItem="ZRx-db-ynd" firstAttribute="width" secondItem="Ywa-lV-Kwx" secondAttribute="width" id="pC1-I6-wgA"/>
+                                </constraints>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="X0H-nj-xs6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LN9-Sv-gMD"/>
+                            <constraint firstItem="X0H-nj-xs6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bqX-9w-Vo2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rF3-88-DUz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
+        </scene>
+        <!--Sample View Controller-->
+        <scene sceneID="Ghm-tl-OGQ">
+            <objects>
+                <viewController storyboardIdentifier="sampleVIew" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FAN-QY-b1o" customClass="SampleViewController" customModule="PollfishiOSSDK_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OYz-SK-vXz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a sample view to show the functionality of Pollfish iOS SDK functionality" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9D-v1-IeR">
+                                <rect key="frame" x="0.0" y="20" width="414" height="842"/>
+                                <accessibility key="accessibilityConfiguration" identifier="sampleFunctionality"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="52"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="D9D-v1-IeR" firstAttribute="leading" secondItem="9qu-VB-Koe" secondAttribute="leading" id="4V7-PV-ZeZ"/>
+                            <constraint firstItem="9qu-VB-Koe" firstAttribute="bottom" secondItem="D9D-v1-IeR" secondAttribute="bottom" id="ZQ3-8a-b04"/>
+                            <constraint firstItem="D9D-v1-IeR" firstAttribute="top" secondItem="OYz-SK-vXz" secondAttribute="top" constant="20" symbolic="YES" id="qMp-Yt-vlF"/>
+                            <constraint firstItem="9qu-VB-Koe" firstAttribute="trailing" secondItem="D9D-v1-IeR" secondAttribute="trailing" id="rWL-Py-JVG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9qu-VB-Koe"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="r8t-h8-muk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jkq-0J-HEz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1839.1304347826087" y="110.49107142857143"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Pwd-FK-1Gl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nt6-1Q-gaY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lbc-J3-KJJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fY9-bb-IdI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dKa-3A-agj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+</document>
